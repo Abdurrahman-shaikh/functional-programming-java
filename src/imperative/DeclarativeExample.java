@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static imperative.Main.Gender.FEMALE;
-import static imperative.Main.Gender.MALE;
+import static imperative.DeclarativeExample.Gender.FEMALE;
+import static imperative.DeclarativeExample.Gender.MALE;
 
-public class Main {
+public class DeclarativeExample {
     public static void main(String[] args) {
         List<Person> people =  List.of(
             new Person("John", MALE),
