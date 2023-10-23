@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import static imperative.DeclarativeExample.Gender.FEMALE;
 import static imperative.DeclarativeExample.Gender.MALE;
 
-public class DeclarativeExample {
+public  class DeclarativeExample {
     public static void main(String[] args) {
         List<Person> people =  List.of(
             new Person("John", MALE),
