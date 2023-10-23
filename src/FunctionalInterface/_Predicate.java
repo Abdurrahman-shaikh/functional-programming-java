@@ -8,11 +8,18 @@ public class _Predicate {
         System.out.println(isPhoneNoValid("9134567800"));
         //With predicate
         System.out.println(isValidPhoneNumber.test("9134567800"));
+        System.out.println(
+                isValidPhoneNumber.and(containsThree).test("9134567800")
+        );
     }
 
     static boolean isPhoneNoValid(String phoneNumber) {
         return phoneNumber.startsWith("91") && phoneNumber.length() == 10;
     }
 
-    static Predicate<String> isValidPhoneNumber = phoneNumber -> phoneNumber.startsWith("91") && phoneNumber.length() == 10;
+    static Predicate<String> isValidPhoneNumber =
+            phoneNumber -> phoneNumber.startsWith("91") && phoneNumber.length() == 10;
+
+    static Predicate<String> containsThree = phoneNumber ->
+            phoneNumber.contains("3");
 }
