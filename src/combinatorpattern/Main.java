@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Customer customer = new Customer(
                 "Azmi",
-                "azmi@gmail.com",
+                "azmi@mail.com",
                 "r914567890",
                 LocalDate.of(2000,12,12)
         );
