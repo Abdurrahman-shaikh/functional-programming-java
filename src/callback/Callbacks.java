@@ -2,7 +2,7 @@ package callback;
 
 import java.util.function.Consumer;
 
-public class Main {
+public class Callbacks {
     public static void main(String[] args) {
         hello(
                 "Abdur",null,value ->
